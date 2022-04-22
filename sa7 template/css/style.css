@@ -1,0 +1,300 @@
+/* ******************* */
+/* BASIC CSS */
+/* ******************* */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow-x: hidden !important;
+}
+
+.btn.btn-my {
+    background: #b3040d !important;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 0px !important;
+    transition: .7s all;
+}
+
+.btn.btn-my-outline {
+    border: 2px solid #fff !important;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 0px !important;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.sectin-caption {
+    width: 700px;
+    margin: auto;
+}
+
+.sectin-caption h2 {
+    font-weight: 800;
+}
+
+
+/* ******************* */
+/* NAVBAR */
+/* ******************* */
+nav {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.123);
+
+}
+
+nav.navbg {
+    background-color: #222 !important;
+    transition: .5s all;
+}
+
+
+.navbar .navbar-nav .nav-link {
+    color: #fff !important;
+    opacity: .9;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px 5px;
+    letter-spacing: .5px;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+    color: #b3040d !important;
+}
+.navbar .navbar-toggler i {
+    color: #fff;
+    height: 30px;
+    width: 39px;
+    background: #b3040d;
+    line-height: 30px;
+    border-radius: 2px;
+    font-size: 20px !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: transparent !important;
+    outline: none !important;
+}
+
+.fa-xmark{
+    transition: .5s all;
+    transform: rotate(180deg);
+}
+/* ******************* */
+/* BANNER */
+/* ******************* */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/cover_2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.banner-content {
+    width: 700px;
+    margin: auto;
+}
+
+.banner-content h1 {
+    font-size: 45px !important;
+    font-weight: 600;
+}
+
+/* ******************* */
+/* ABOUT */
+/* ******************* */
+.about-content h2 {
+    font-weight: 700;
+}
+
+/* ******************* */
+/* SERVICES */
+/* ******************* */
+.services-item {
+    
+    padding: 48px  17px;
+    transition: .6s ease;
+}
+.services-item:hover{
+    border-bottom: 4px solid #b3040d;
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+margin-top: -10px;
+}
+.services-item i {
+    font-size: 40px;
+    color: #b3040d;
+    font-weight: bold;
+}
+
+.services-item h3 {
+    font-weight: 600;
+}
+
+/* ******************* */
+/* GALLERY  */
+/* ******************* */
+.gallery-item{
+    position: relative;;
+    transition: .5s all !important;
+}
+.gallery-overly{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(34, 34, 34, 0.582);
+    top: 0;
+    left: 0%;
+    transition: .5s all !important;
+
+}
+.gallery-item:hover .gallery-overly{
+    width: 100%;
+
+}
+.gallery-hover-text{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: .5s all !important;
+
+    
+}
+.gallery-item:hover .gallery-hover-text{
+    opacity: 1;
+    left: 50%;
+}
+
+/* ******************* */
+/* Team  */
+/* ******************* */
+.team-content:hover{
+    border-bottom: 4px solid #b3040d;
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+margin-top: -10px;
+transition: .4s ease-in-out;
+}
+
+/* ******************* */
+/* CUSTOMER REVIEW  */
+/* ******************* */
+.customer-review{
+    padding: 20px;
+}
+.customer-review:hover{
+    border-bottom: 4px solid #b3040d;
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+margin-top: -10px;
+transition: .4s ease-in-out;
+}
+.review-star .nav li i{
+    color: #b3040d;
+}
+.customer-image img{
+    height: 100px;
+    width: 90px;
+}
+.coutomer-details h4{
+    font-weight: 600;
+}
+
+/* ******************* */
+/* BLOG  */
+/* ******************* */
+.blog-content:hover{
+    border-bottom: 4px solid #b3040d;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin-top: -10px;
+    transition: .4s ease-in-out;
+}
+/* ******************* */
+/* GET IN TOUCH  */
+/* ******************* */
+.get-item:hover{
+    border-bottom: 4px solid #b3040d;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin-top: -10px;
+    transition: .4s ease-in-out;
+}
+.get-item i{
+font-size: 40px !important;
+color: #b3040d;
+}
+/* ******************* */
+/* GET IN TOUCH form */
+/* ******************* */
+.contact-fom:hover{
+  
+        border-bottom: 4px solid #b3040d;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        margin-top: -10px;
+        transition: .4s ease-in-out;
+    
+}
+.contact-fom .form-control{
+    background-color: rgb(240, 240, 240);
+    padding: 10px 5px !important;
+
+    
+}
+.contact-fom .form-control:focus{
+    border: 2px solid #b3040d;
+    box-shadow: none !important;
+}
+
+/* ******************* */
+/* GOOGLE MAP*/
+/* ******************* */
+.googlemap { 
+    width:400px; 
+    height:300px;
+  }
+
+  .footer-top{
+      background-color: #222222;
+      color: white;
+  }
+  .footer-top p{
+      color: #fff !important;
+      opacity: .6;
+  }
+
+  footer{
+    background: #111111;
+    padding: 10px 0px;
+  
+  }
+  footer p{
+    opacity: .7;
+    color: #fff;
+    margin-top: 3px;
+
+  }
